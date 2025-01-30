@@ -1,2 +1,2 @@
 # CodeBeast
-hola 
+print("hola") 
