@@ -1,0 +1,13 @@
+class figura:
+
+    def calculocuadrado(lado):
+        perimetro = 4 * lado 
+        area = lado * lado 
+        return perimetro , area
+    
+    def calculotriangulo(lado,base, altura):
+        perimetro = 3 * lado
+        area = (base * altura)/2
+        return area , perimetro
+    
+    def calculopentagono(altura,)
