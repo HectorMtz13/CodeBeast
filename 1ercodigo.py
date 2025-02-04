@@ -1,19 +1,19 @@
+import math
 class figura:
 
- @staticmethod
  def calculocuadrado(lado):
         perimetro = 4 * lado 
         area = lado * lado 
         return perimetro , area
- @staticmethod
- def calculotriangulo(lado, altura):
+
+ def calculotriangulo(lado):
         perimetro = 3 * lado
-        area = (lado * altura)/2
+        area = (lado ** 2) * (math.sqrt(3)/4)
         return perimetro , area
- @staticmethod  
- def calculopentagono(lado, apotema):
+
+ def calculopentagono(lado):
       perimetro = 5 * lado 
-      area = (perimetro * apotema)/ 2
+      area = (5 / 4) * (lado ** 2) * (1 / math.tan(math.pi / 5))
       return perimetro , area 
     
 
@@ -26,21 +26,18 @@ opcion = int(input("Elige 1 de las 3 opciones : "))
 if opcion == 1:
     lado = float(input("Ingresingrese el lado del cuadrado"))
     perimetro , area = figura.calculocuadrado(lado)
-    print(f"El perímetro del cuadrado es: {perimetro}")
+    print(f"El perímetro del cuadrado es:  {perimetro}")
     print(f"El área del cuadrado es: {area}")
 elif opcion == 2:
     lado = float(input("Ingresa el lado del triángulo: "))
-    altura = float(input("Ingresa la altura del triángulo: "))
-    perimetro , area = figura.calculotriangulo(lado, altura)
+    perimetro , area = figura.calculotriangulo(lado)
     print(f"El perímetro del triángulo es: {perimetro}")
     print(f"El área del triángulo es: {area}")
-
 elif opcion == 3:
-    lado = float(input("Ingresa el lado del pentágono: "))
-    apotema = float(input("Ingresa la apotema del pentágono:"))
-    perimetro , area = figura.calculopentagono(lado , apotema)
-    print(f"El perímetro del pentágono es: {perimetro}")
-    print(f"el area del pentagono es :{area}")
+    lado = float(input("Ingresa el lado del pentagono: "))
+    perimetro , area = figura.calculopentagono(lado)
+    print(f"Elperimetro del pentagono es :{perimetro}")
+    print(f"el area del pentagono es : {area}")
 
 else:
  print("Esa opcion no se encuentra en las opciones")
