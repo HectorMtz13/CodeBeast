@@ -1,4 +1,5 @@
-import math
+from math import pi , tan , sqrt 
+
 class figura:
 
  def calculocuadrado(lado):
@@ -8,21 +9,20 @@ class figura:
 
  def calculotriangulo(lado):
         perimetro = 3 * lado
-        area = (lado ** 2) * (math.sqrt(3)/4)
+        area = (lado ** 2) * (sqrt(3)/4)
         return perimetro , area
 
  def calculopentagono(lado):
       perimetro = 5 * lado 
-      area = (5 / 4) * (lado ** 2) * (1 / math.tan(math.pi / 5))
+      area = (5 / 4) * (lado ** 2) * (1 / tan(pi / 5))
       return perimetro , area
  
  def calculoflotante(lado, numlados):
      perimetro = lado * numlados 
-     apotema = lado/ (2* math.tan(math.pi/ numlados))
+     apotema = lado/ (2*tan(pi/ numlados))
      area = (perimetro * apotema)/ 2
      return perimetro , area 
-
-print ("Cual figura deseas enconyrarle su area y su perimetro")
+print("Cual figura deseas enconyrarle su area y su perimetro")
 print("1. Cuadrado")
 print("2. Triángulo")
 print("3. Pentágono")
