@@ -12,6 +12,7 @@ class Arreglos:
         if 0 <= indice < len(self.lista):
             self.lista[indice] = nuevo_valor
             print(f"Elemento en la posición {indice} modificado a '{nuevo_valor}'.")
+
     def eliminar(self, indice):
         if 0 <= indice < len(self.lista):
             eliminado = self.lista.pop(indice)
