@@ -10,7 +10,7 @@ class Dias(Enum):
     DOMINGO = "domingo"
 
 def verificar_dia(dia):
-     try:
+    try:
         if not isinstance(dia, str):
             raise TypeError("Se esperaba un valor de tipo string.")
 
@@ -32,4 +32,4 @@ def verificar_dia(dia):
 verificar_dia("Lunes")     # Día válido
 verificar_dia("domingo")   # Día válido
 verificar_dia("Feriado")   # Error: Día no válido
-verificar_dia(123)        # Error de tipo
+verificar_dia(123)        # Error de tipo 
