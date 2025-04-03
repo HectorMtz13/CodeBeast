@@ -1,0 +1,8 @@
+lista  =("1", "2")
+print(lista)
+lista.insert(1,"3")
+print(lista)
+lista.extend([2,"hola"])
+print(lista)
+lista.index("1")
+lista.count("1")

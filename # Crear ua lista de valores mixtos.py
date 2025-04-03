@@ -18,7 +18,7 @@ Convertir_tupla = tuple(Mi_lista, array)
 print(Convertir_tupla)
 #Convertir a diccionario
 diccionario = {
-    "Nombre" = ["pepa","gorge","homero"], 
+    "Nombre" = ["Benito Juarez","Vicente Fernandez","Don Omar"], 
     "edad" = ["-1","99", "120"],
     "nacionalidad"=["peru", "venezuela", "mexico"]
     }
