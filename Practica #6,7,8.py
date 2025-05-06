@@ -1,3 +1,5 @@
+
+# Herencia 
 class persona: 
     def __init__(self,persona):
         self._nombre = nombre
