@@ -7,7 +7,7 @@ class hilo(threading.Thread):
         self.nombre = nombre
         self.intervalo = intervalo 
 # Definimos el método run que es el que se ejecuta al iniciar el hilo
-    def run(self):
+    def run (self):
         print(f"El hilo {self.nombre} ha comenzado") 
         for i in range(5):
            print(f"el hilo {self.nombre} se encuentra en la iteracion {i}")
@@ -16,3 +16,8 @@ class hilo(threading.Thread):
 # Creamos dos hilos
 hilo1 = hilo("Hilo1", 2) # Hilo que duerme 1 segundo
 hilo2 = hilo("Hilo2", 4) # Hilo que duerme 2 segundos
+hilo1.start() # Iniciamos el hilo
+hilo2.start() # Iniciamos el hilo
+hilo1.join() # Esperamos a que el hilo termine
+hilo2.join() # Esperamos a que el hilo termine
+print("Los hilos han terminado") # Mensaje final
