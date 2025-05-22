@@ -1,4 +1,4 @@
-#👌 Índice de Actividades 😊
+# Índice de Actividades 👌😊
 
 1. [Figuras sin constructor](https://github.com/HectorMtz13/CodeBeast/tree/main/Actividad%2001-%20Figuras%20sin%20contructor)
 2. [Figuras con parámetros](https://github.com/HectorMtz13/CodeBeast/tree/main/Actividad%2002-%20Figuras%20con%20Parametros)
